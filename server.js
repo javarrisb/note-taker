@@ -6,8 +6,8 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // api routes import
-const apiRoutes = require('./routes/api');
-const htmlRoutes = require('./routes/html');
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
 
 // route Middleware
 app.use(express.json());

@@ -16,7 +16,7 @@ router.get('/notes', (req, res) => {
 // POST /notes to make new notes on the app page
 router.post('/notes', (req, res) => {
     const freshNote = req.body;
-    freshNote.id = uuidv4();
+    freshNote.id = uuid();
     // add data to notes array
     notes.push(freshNote);
     fs.writeFileSync(
