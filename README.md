@@ -1,3 +1,3 @@
 # Note-Taker 
 
-# Description @icn-book-open
+# Description @icn-camera
