@@ -1,3 +1,3 @@
 # Note-Taker 
 
-# Description @-book-open
+# Description @icn-book-open
