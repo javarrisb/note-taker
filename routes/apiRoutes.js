@@ -31,10 +31,7 @@ router.delete('/notes/:id', (req, res) => {
     const id = req.params.id;
     // delete note with unique id
     const delNote = notes.filter(note => note.id !== id);
-    fs.writeFileSync(
-        path.join(__dirname, '../db/db.json'),
-        JSON.stringify(delNote, null, 2)
-    );
+    fs.writeFileSync('./db/db.json', JSON.stringify(notes, null, '\t'));
     res.json(delNote);
 });
 
